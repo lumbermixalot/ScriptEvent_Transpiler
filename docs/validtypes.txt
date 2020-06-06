@@ -1,0 +1,14 @@
+Return types
+                supportedTypes.push_back(azrtti_typeid<void>());
+                supportedTypes.push_back(azrtti_typeid<bool>());
+                supportedTypes.push_back(azrtti_typeid<double>());
+                supportedTypes.push_back(azrtti_typeid<AZ::EntityId>());
+                supportedTypes.push_back(azrtti_typeid<AZStd::string>());
+                supportedTypes.push_back(azrtti_typeid<AZ::Vector2>());
+                supportedTypes.push_back(azrtti_typeid<AZ::Vector3>());
+                supportedTypes.push_back(azrtti_typeid<AZ::Vector4>());
+                supportedTypes.push_back(azrtti_typeid<AZ::Matrix3x3>());
+                supportedTypes.push_back(azrtti_typeid<AZ::Matrix4x4>());
+                supportedTypes.push_back(azrtti_typeid<AZ::Transform>());
+                supportedTypes.push_back(azrtti_typeid<AZ::Quaternion>());
+                supportedTypes.push_back(azrtti_typeid<AZ::Crc32>());
