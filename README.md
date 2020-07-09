@@ -34,26 +34,26 @@ ScriptEvent_Transpiler> python main.py -h
 Now, let's transpile the sample interface file located in **Samples/demo_interface.lua**, the idea is to generate a ScriptEvent lua file.
 
 ### USAGE 1
-ScriptEvent_Transpiler> python main.py -e MyMessageBus -Samples\demo_interface.lua Samples  
+ScriptEvent_Transpiler> python main.py -e MyBroadcastBus -Samples\demo_interface.lua Samples  
   
 One file is generated inside the **.Samples/** directory:    
-  - MyMessageBus.lua   <-- This is the non-addressable Broadcast type of ScriptEvent lua file. Callers would do MyMessageBus.Broadcast.Function(...)
+  - MyBroadcastBus.lua   <-- This is the non-addressable Broadcast type of ScriptEvent lua file. Callers would do MyBroadcastBus.Broadcast.Function(...)
 
 ### USAGE 2
-ScriptEvent_Transpiler> python main.py -e MyMessageBus -t Samples\demo_interface.lua Samples  
+ScriptEvent_Transpiler> python main.py -e MyBroadcastBus -t Samples\demo_interface.lua Samples  
   
 Two Files are generated inside the **.Samples/** directory:   
-  - MyMessageBus.lua   <-- This is the non-addressable Broadcast type of ScriptEvent lua file. Callers would do MyMessageBus.Broadcast.Function(...)
-  - MyMessageBus_subclass.lua   <-- An example class file on how to listen or respond to events sent to the MyMessageBus Bus.
-You should place MyMessageBus.lua nested somewhere in your GAME_PROJECT/Scripts/... folder.
+  - MyBroadcastBus.lua   <-- This is the non-addressable Broadcast type of ScriptEvent lua file. Callers would do MyBroadcastBus.Broadcast.Function(...)
+  - MyBroadcastBus_subclass.lua   <-- An example class file on how to listen or respond to events sent to the MyBroadcastBus Bus.
+You should place MyBroadcastBus.lua nested somewhere in your GAME_PROJECT/Scripts/... folder.
   
 ### USAGE 2
-ScriptEvent_Transpiler> python main.py -e MyBroadcastBus -a EntityId -t Samples\demo_interface.lua Samples  
+ScriptEvent_Transpiler> python main.py -e MyEventBus -a EntityId -t Samples\demo_interface.lua Samples  
   
 Two Files are generated inside .Samples\
-  - MyMessageBus.lua   <-- This is the EntityId addressable Event type of ScriptEvent lua file. Callers would do MyMessageBus.Event.Function(SomeEntityId, ...)
-  - MyMessageBus_subclass.lua   <-- An example class file on how to listen or respond to events sent to the MyMessageBus Bus.
-You should place MyMessageBus.lua nested somewhere in your GAME_PROJECT/Scripts/... folder.
+  - MyEventBus.lua   <-- This is the EntityId addressable Event type of ScriptEvent lua file. Callers would do MyEventBus.Event.Function(SomeEntityId, ...)
+  - MyEventBus_subclass.lua   <-- An example class file on how to listen or respond to events sent to the MyEventBus Bus.
+You should place MyEventBus.lua nested somewhere in your GAME_PROJECT/Scripts/... folder.
 
 
 
