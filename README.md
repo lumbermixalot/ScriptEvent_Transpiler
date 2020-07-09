@@ -5,7 +5,7 @@ A tool that simplifies the creation of ScriptEvent lua files for Lumberyard Game
 In Lumberyard you can use Script Events to create EBuses in Lua. With those EBuses you can send/receive events across lua & ScriptCanvas scripts. Script Events replace the old Gameplay Notification Bus.
 
 THE PROBLEM: It is tedious to declare Script Events in a LUA file. You have to declare each function, parameter, and return type line by line.  
-THE SOLUTION: It would be nice if We could write a simple lua file that declares an interface that We'd like to be the API for any given Script Event. And with the magic of a transpiler We coould generate the boiler plate ScriptEvent definition file.
+THE SOLUTION: It would be nice if We could write a simple lua file that declares an interface that We'd like to be the API for any given Script Event. And with the magic of a transpiler We could generate the boiler plate ScriptEvent definition file.
 
 ### SIMILAR SITUATIONS:
 For the sake of analogy, here is a list of similar scenarios where people use a transpiler/compiler that takes an input "interface" file and generates a more complicated class file.
@@ -35,18 +35,21 @@ Now, let's transpile the sample interface file located in **Samples/demo_interfa
 
 ### USAGE 1
 ScriptEvent_Transpiler> python main.py -e MyMessageBus -Samples\demo_interface.lua Samples  
+  
 One file is generated inside the **.Samples/** directory:    
   - MyMessageBus.lua   <-- This is the non-addressable Broadcast type of ScriptEvent lua file. Callers would do MyMessageBus.Broadcast.Function(...)
 
 ### USAGE 2
 ScriptEvent_Transpiler> python main.py -e MyMessageBus -t Samples\demo_interface.lua Samples  
+  
 Two Files are generated inside the **.Samples/** directory:   
   - MyMessageBus.lua   <-- This is the non-addressable Broadcast type of ScriptEvent lua file. Callers would do MyMessageBus.Broadcast.Function(...)
   - MyMessageBus_subclass.lua   <-- An example class file on how to listen or respond to events sent to the MyMessageBus Bus.
 You should place MyMessageBus.lua nested somewhere in your GAME_PROJECT/Scripts/... folder.
   
 ### USAGE 2
-ScriptEvent_Transpiler> python main.py -e MyBroadcastBus -a EntityId -t Samples\demo_interface.lua Samples
+ScriptEvent_Transpiler> python main.py -e MyBroadcastBus -a EntityId -t Samples\demo_interface.lua Samples  
+  
 Two Files are generated inside .Samples\
   - MyMessageBus.lua   <-- This is the EntityId addressable Event type of ScriptEvent lua file. Callers would do MyMessageBus.Event.Function(SomeEntityId, ...)
   - MyMessageBus_subclass.lua   <-- An example class file on how to listen or respond to events sent to the MyMessageBus Bus.
