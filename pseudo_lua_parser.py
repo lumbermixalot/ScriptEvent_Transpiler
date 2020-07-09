@@ -96,7 +96,11 @@ class PseudoLuaParser(LuaScriptEventVisitor):
     def visitFunctionDecl(self, ctx:LuaScriptEventParser.FunctionDeclContext):
         comments = self._GetCommentsBeforeContext(ctx)
         funcName = self.visit(ctx.funcname())
-        params = self.visit(ctx.parameters())
+        #Function arguments/parameters are optional.
+        if ctx.parameters() is None:
+            params = []
+        else:
+            params = self.visit(ctx.parameters())
         retType = None
         if ctx.returnStatement() is not None:
             retType = self.visit(ctx.returnStatement())
