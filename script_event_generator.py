@@ -38,9 +38,9 @@ class ScriptEventGenerator():
             if self.addressType == "String":
                 file_obj.write(", typeid(\"\")")
             elif self.addressType == "EntityId":
-                file_obj.write(", typeid(EntityId()")
+                file_obj.write(", typeid(EntityId())")
             elif self.addressType == "Crc32":
-                file_obj.write(", typeid(Crc32()")
+                file_obj.write(", typeid(Crc32())")
             file_obj.write(")\n\n")
             
             for comment, funcName, params, retType in  functions_list:
