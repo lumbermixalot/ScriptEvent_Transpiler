@@ -1,4 +1,4 @@
-# Generated from LuaScriptEvent.g4 by ANTLR 4.8
+# Generated from LuaScriptEvent.g4 by ANTLR 4.12.0
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -8,36 +8,32 @@ if sys.version_info[1] > 5:
 else:
 	from typing.io import TextIO
 
-
 def serializedATN():
-    with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\24")
-        buf.write("M\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
-        buf.write("\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\3\2\6\2\32\n\2")
-        buf.write("\r\2\16\2\33\3\2\3\2\3\3\3\3\3\3\3\3\5\3$\n\3\3\3\3\3")
-        buf.write("\5\3(\n\3\3\3\3\3\3\4\3\4\3\4\7\4/\n\4\f\4\16\4\62\13")
-        buf.write("\4\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\7\3\7\3\b\3\b\3\b\3\b")
-        buf.write("\5\bA\n\b\3\t\3\t\5\tE\n\t\3\n\3\n\3\13\3\13\3\f\3\f\3")
-        buf.write("\f\2\2\r\2\4\6\b\n\f\16\20\22\24\26\2\5\3\2\20\21\3\2")
-        buf.write("\16\17\3\2\f\r\2I\2\31\3\2\2\2\4\37\3\2\2\2\6+\3\2\2\2")
-        buf.write("\b\63\3\2\2\2\n\66\3\2\2\2\f:\3\2\2\2\16@\3\2\2\2\20B")
-        buf.write("\3\2\2\2\22F\3\2\2\2\24H\3\2\2\2\26J\3\2\2\2\30\32\5\4")
-        buf.write("\3\2\31\30\3\2\2\2\32\33\3\2\2\2\33\31\3\2\2\2\33\34\3")
-        buf.write("\2\2\2\34\35\3\2\2\2\35\36\7\2\2\3\36\3\3\2\2\2\37 \7")
-        buf.write("\3\2\2 !\5\f\7\2!#\7\4\2\2\"$\5\6\4\2#\"\3\2\2\2#$\3\2")
-        buf.write("\2\2$%\3\2\2\2%\'\7\5\2\2&(\5\b\5\2\'&\3\2\2\2\'(\3\2")
-        buf.write("\2\2()\3\2\2\2)*\7\6\2\2*\5\3\2\2\2+\60\5\n\6\2,-\7\7")
-        buf.write("\2\2-/\5\n\6\2.,\3\2\2\2/\62\3\2\2\2\60.\3\2\2\2\60\61")
-        buf.write("\3\2\2\2\61\7\3\2\2\2\62\60\3\2\2\2\63\64\7\b\2\2\64\65")
-        buf.write("\5\16\b\2\65\t\3\2\2\2\66\67\7\13\2\2\678\7\t\2\289\5")
-        buf.write("\16\b\29\13\3\2\2\2:;\7\13\2\2;\r\3\2\2\2<A\5\22\n\2=")
-        buf.write("A\5\24\13\2>A\5\26\f\2?A\5\20\t\2@<\3\2\2\2@=\3\2\2\2")
-        buf.write("@>\3\2\2\2@?\3\2\2\2A\17\3\2\2\2BD\7\13\2\2CE\7\n\2\2")
-        buf.write("DC\3\2\2\2DE\3\2\2\2E\21\3\2\2\2FG\t\2\2\2G\23\3\2\2\2")
-        buf.write("HI\t\3\2\2I\25\3\2\2\2JK\t\4\2\2K\27\3\2\2\2\b\33#\'\60")
-        buf.write("@D")
-        return buf.getvalue()
-
+    return [
+        4,1,18,75,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,1,0,4,0,24,8,0,11,0,12,0,25,
+        1,0,1,0,1,1,1,1,1,1,1,1,3,1,34,8,1,1,1,1,1,3,1,38,8,1,1,1,1,1,1,
+        2,1,2,1,2,5,2,45,8,2,10,2,12,2,48,9,2,1,3,1,3,1,3,1,4,1,4,1,4,1,
+        4,1,5,1,5,1,6,1,6,1,6,1,6,3,6,63,8,6,1,7,1,7,3,7,67,8,7,1,8,1,8,
+        1,9,1,9,1,10,1,10,1,10,0,0,11,0,2,4,6,8,10,12,14,16,18,20,0,3,1,
+        0,14,15,1,0,12,13,1,0,10,11,71,0,23,1,0,0,0,2,29,1,0,0,0,4,41,1,
+        0,0,0,6,49,1,0,0,0,8,52,1,0,0,0,10,56,1,0,0,0,12,62,1,0,0,0,14,64,
+        1,0,0,0,16,68,1,0,0,0,18,70,1,0,0,0,20,72,1,0,0,0,22,24,3,2,1,0,
+        23,22,1,0,0,0,24,25,1,0,0,0,25,23,1,0,0,0,25,26,1,0,0,0,26,27,1,
+        0,0,0,27,28,5,0,0,1,28,1,1,0,0,0,29,30,5,1,0,0,30,31,3,10,5,0,31,
+        33,5,2,0,0,32,34,3,4,2,0,33,32,1,0,0,0,33,34,1,0,0,0,34,35,1,0,0,
+        0,35,37,5,3,0,0,36,38,3,6,3,0,37,36,1,0,0,0,37,38,1,0,0,0,38,39,
+        1,0,0,0,39,40,5,4,0,0,40,3,1,0,0,0,41,46,3,8,4,0,42,43,5,5,0,0,43,
+        45,3,8,4,0,44,42,1,0,0,0,45,48,1,0,0,0,46,44,1,0,0,0,46,47,1,0,0,
+        0,47,5,1,0,0,0,48,46,1,0,0,0,49,50,5,6,0,0,50,51,3,12,6,0,51,7,1,
+        0,0,0,52,53,5,9,0,0,53,54,5,7,0,0,54,55,3,12,6,0,55,9,1,0,0,0,56,
+        57,5,9,0,0,57,11,1,0,0,0,58,63,3,16,8,0,59,63,3,18,9,0,60,63,3,20,
+        10,0,61,63,3,14,7,0,62,58,1,0,0,0,62,59,1,0,0,0,62,60,1,0,0,0,62,
+        61,1,0,0,0,63,13,1,0,0,0,64,66,5,9,0,0,65,67,5,8,0,0,66,65,1,0,0,
+        0,66,67,1,0,0,0,67,15,1,0,0,0,68,69,7,0,0,0,69,17,1,0,0,0,70,71,
+        7,1,0,0,71,19,1,0,0,0,72,73,7,2,0,0,73,21,1,0,0,0,6,25,33,37,46,
+        62,66
+    ]
 
 class LuaScriptEventParser ( Parser ):
 
@@ -96,7 +92,7 @@ class LuaScriptEventParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.8")
+        self.checkVersion("4.12.0")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -104,6 +100,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class ModuleContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -147,7 +144,7 @@ class LuaScriptEventParser ( Parser ):
                 self.state = 25 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==LuaScriptEventParser.T__0):
+                if not (_la==1):
                     break
 
             self.state = 27
@@ -162,6 +159,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class FunctionDeclContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -207,7 +205,7 @@ class LuaScriptEventParser ( Parser ):
             self.state = 33
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==LuaScriptEventParser.ID:
+            if _la==9:
                 self.state = 32
                 self.parameters()
 
@@ -217,7 +215,7 @@ class LuaScriptEventParser ( Parser ):
             self.state = 37
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==LuaScriptEventParser.T__5:
+            if _la==6:
                 self.state = 36
                 self.returnStatement()
 
@@ -234,6 +232,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class ParametersContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -270,7 +269,7 @@ class LuaScriptEventParser ( Parser ):
             self.state = 46
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==LuaScriptEventParser.T__4:
+            while _la==5:
                 self.state = 42
                 self.match(LuaScriptEventParser.T__4)
                 self.state = 43
@@ -289,6 +288,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class ReturnStatementContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -330,6 +330,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class ParameterContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -376,6 +377,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class FuncnameContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -414,6 +416,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class DatatypeContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -455,22 +458,22 @@ class LuaScriptEventParser ( Parser ):
             self.state = 62
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [LuaScriptEventParser.TRUE, LuaScriptEventParser.FALSE]:
+            if token in [14, 15]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 58
                 self.booltype()
                 pass
-            elif token in [LuaScriptEventParser.INT, LuaScriptEventParser.FLOAT]:
+            elif token in [12, 13]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 59
                 self.numbertype()
                 pass
-            elif token in [LuaScriptEventParser.DOUBLEQS, LuaScriptEventParser.SINGLEQS]:
+            elif token in [10, 11]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 60
                 self.stringtype()
                 pass
-            elif token in [LuaScriptEventParser.ID]:
+            elif token in [9]:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 61
                 self.classtype()
@@ -488,6 +491,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class ClasstypeContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -520,7 +524,7 @@ class LuaScriptEventParser ( Parser ):
             self.state = 66
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==LuaScriptEventParser.T__7:
+            if _la==8:
                 self.state = 65
                 self.match(LuaScriptEventParser.T__7)
 
@@ -535,6 +539,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class BooltypeContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -567,7 +572,7 @@ class LuaScriptEventParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 68
             _la = self._input.LA(1)
-            if not(_la==LuaScriptEventParser.TRUE or _la==LuaScriptEventParser.FALSE):
+            if not(_la==14 or _la==15):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -582,6 +587,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class NumbertypeContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -614,7 +620,7 @@ class LuaScriptEventParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 70
             _la = self._input.LA(1)
-            if not(_la==LuaScriptEventParser.INT or _la==LuaScriptEventParser.FLOAT):
+            if not(_la==12 or _la==13):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -629,6 +635,7 @@ class LuaScriptEventParser ( Parser ):
 
 
     class StringtypeContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -661,7 +668,7 @@ class LuaScriptEventParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 72
             _la = self._input.LA(1)
-            if not(_la==LuaScriptEventParser.DOUBLEQS or _la==LuaScriptEventParser.SINGLEQS):
+            if not(_la==10 or _la==11):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)

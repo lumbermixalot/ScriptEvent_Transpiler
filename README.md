@@ -18,10 +18,12 @@ I hope you get the idea by now...
 
 ## Requirements
 - Python3
-- Antlr4.8 runtime for Python3:
-  - pip install antlr4-python3-runtime
+- Antlr4.12 runtime for Python3:
+  - pip install antlr4-tools
   - OR
-  - python -m pip install antlr4-python3-runtime
+  - python -m pip install antlr4-tools
+  - For more details (in particular for Windows: https://github.com/antlr/antlr4/blob/master/doc/getting-started.md)
+
   
   
 ## How To Use
