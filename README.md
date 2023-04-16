@@ -1,5 +1,5 @@
 # ScriptEvent_Transpiler
-A tool that simplifies the creation of ScriptEvent lua files for Lumberyard Game Projects.
+A tool that simplifies the creation of ScriptEvent lua files for O3DE Game Projects.
 
 ## Motivation
 In Lumberyard you can use Script Events to create EBuses in Lua. With those EBuses you can send/receive events across lua & ScriptCanvas scripts. Script Events replace the old Gameplay Notification Bus.
