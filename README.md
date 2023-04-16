@@ -2,7 +2,7 @@
 A tool that simplifies the creation of ScriptEvent lua files for O3DE Game Projects.
 
 ## Motivation
-In Lumberyard you can use Script Events to create EBuses in Lua. With those EBuses you can send/receive events across lua & ScriptCanvas scripts. Script Events replace the old Gameplay Notification Bus.
+In O3DE you can use Script Events to create EBuses in Lua. With those EBuses you can send/receive events across lua & ScriptCanvas scripts. Script Events replace the old Gameplay Notification Bus.
 
 THE PROBLEM: It is tedious to declare Script Events in a LUA file. You have to declare each function, parameter, and return type line by line.  
 THE SOLUTION: It would be nice if We could write a simple lua file that declares an interface that We'd like to be the API for any given Script Event. And with the magic of a transpiler We could generate the boiler plate ScriptEvent definition file.
