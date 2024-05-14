@@ -43,7 +43,7 @@ class ClassGenerator():
 
     def _WriteInfoHeader(self, file_obj):
         file_obj.write(
-        "-- This class template file was auto generated with ScriptEvent_Transpiler.\n"
+        "-- This class template file was auto generated with ScriptEvent_Transpiler (Python).\n"
         "-- Source Available at https://github.com/lumbermixalot/ScriptEvent_Transpiler.git\n"
         )
 

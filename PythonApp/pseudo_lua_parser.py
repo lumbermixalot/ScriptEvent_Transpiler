@@ -152,9 +152,9 @@ class PseudoLuaParser(LuaScriptEventVisitor):
 
     # Visit a parse tree produced by LuaScriptEventParser#booltype.
     def visitBooltype(self, ctx:LuaScriptEventParser.BooltypeContext):
-        if ctx.TRUE():
-            return ctx.TRUE().getText()
-        return ctx.FALSE().getText()
+        if ctx.BTRUE():
+            return ctx.BTRUE().getText()
+        return ctx.BFALSE().getText()
 
     # Visit a parse tree produced by LuaScriptEventParser#numbertype.
     def visitNumbertype(self, ctx:LuaScriptEventParser.NumbertypeContext):
