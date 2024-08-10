@@ -57,7 +57,7 @@ int main(int argc, const char * argv[])
     cli.add_flag("-p,--print_functions", printFunctions, "For debugging purposes. Prints all parsed functions to stdout.");
 
     std::string ebusName;
-    cli.add_option("-e,--ebus_name", ebusName, "The name of the EBus interface for the ScriptEvent file.")->required(true);
+    cli.add_option("-e,--ebus_name", ebusName, "The name of the EBus interface for the ScriptEvent file.");
 
     std::string addressType("None");
     cli.add_option("-a,--address_type", addressType, "Options: 'None'(default), 'String', 'EntityId', 'Crc32'. If 'None', this will be a Broadcast type of EBus, for all other options it will be an Event type of EBus.")->capture_default_str();
@@ -69,7 +69,7 @@ int main(int argc, const char * argv[])
     cli.add_flag("-d,--disable_script_event_generation", disableScriptEventGeneration, "If this flag is present, the ScriptEvent lua file won't be generated.");
 
     std::string inputFilePath;
-    cli.add_option("input_file", inputFilePath, "The input file to transpile.")->required(true);
+    cli.add_option("input_file", inputFilePath, "The input file to transpile.");
 
     std::string outputPath=".";
     cli.add_option("output_path", outputPath, "The output directory where the <ebus_name>.lua file will be generated.")->capture_default_str();
@@ -93,6 +93,18 @@ int main(int argc, const char * argv[])
     if (!std::filesystem::is_directory(outputPath))
     {
         std::cerr << "path='" << outputPath << "' doesn't exist or it is not a directory\n";
+        return -1;
+    }
+
+    if (ebusName.empty())
+    {
+        std::cerr << "Missing '-e/--ebus_name' argument.\n";
+        return -1;
+    }
+
+    if (inputFilePath.empty())
+    {
+        std::cerr << "Missing <INPUT FILE> argument.\n";
         return -1;
     }
 
