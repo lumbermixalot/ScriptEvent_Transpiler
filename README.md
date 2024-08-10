@@ -6,7 +6,7 @@ Read [./CppApp/README.md](./CppApp/README.md).
 
 
 # For instructions to use the Python version
-Read [./PythonApp/README.md](./Python/README.md).  
+Read [./PythonApp/README.md](./PythonApp/README.md).  
 REMARK: This was the original version of this tool, but this tool uses
 ANTLR4, which has proven to be very difficult to setup when used as a python
 module. So it is recommended to use the C++ version for a more straightforward
