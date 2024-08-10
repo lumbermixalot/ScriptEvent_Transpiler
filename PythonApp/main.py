@@ -22,6 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+__version__ = '1.1.0'
+__author__ = 'Galib Arrieta'
+
 import sys
 import argparse
 import os
@@ -49,13 +52,16 @@ def Transpile(input_filepath, output_path, ebus_name, address_type, generate_tem
         output_filename = os.path.join(output_path, "{}.lua".format(ebus_name))
         seGenerator = ScriptEventGenerator(ebus_name, address_type)
         seGenerator.Generate(output_filename, functionsList)
+        print(f"Generated ScriptEvent Lua file '{output_filename}'")
     if generate_template:
         output_filename = os.path.join(output_path, "{}_subclass.lua".format(ebus_name))
         classGenerator = ClassGenerator(ebus_name, address_type)
         classGenerator.Generate(output_filename, functionsList)
+        print(f"Generated Class Example Template Lua file '{output_filename}'")
 
 
 optparser = argparse.ArgumentParser(description='Transpiles a pseudo-lua file into a Lumberyard ScriptEvent lua file or a lua implementation template of such ScriptEvent.')
+optparser.add_argument("-v", '--version', action='version', version=f'ScriptEvent_Transpiler {__version__}') #version=f'%(prog)s {__version__}')
 optparser.add_argument("-e", "--ebus_name", required=True,
     help="The name of the EBus interface for the ScriptEvent file.")
 optparser.add_argument("-a", "--address_type", default="None", choices=["None", "String", "EntityId", "Crc32"],
