@@ -6,6 +6,6 @@
 5. In VS2022 compile for Debug or Release.
 6. For convenience, the build steps will automatically create: `ScriptEvent_Transpiler_Release.exe` or `ScriptEvent_Transpiler_Debug.exe` under the root GIT folder of the `ScriptEvent_Transpiler` repository.
 
-# Regenerate the AZSL ANTLR grammar (Optional)
+# Regenerate the Lua ANTLR grammar (Optional)
 1. Install JDK17
 2. (Windows) The generated source files can be recreated by running `.\regenerate_antlr.bat` script under `source` folder, it will regenerate the files under `source/generated`.
